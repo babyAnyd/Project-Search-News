@@ -19,9 +19,8 @@ export var newsList = [
 
 export function search() {
   //inputValue is the variable that contains the search string
-  const inputValue = document
-    .getElementById("search-input")
-    .value.toLowerCase();
+  const inputValue = document.getElementById("search-input").value;
+  const toUpperInput = inputValue.toLowerCase();
 
   //Write your code here for the search function
 
@@ -32,7 +31,7 @@ export function search() {
   for (let i = 0; i < item.length; i++) {
     let a = item[i].getElementsByTagName("h4")[0];
     let value = a.innerHTML || a.innerText || a.textContent;
-    if (value.toLowerCase().indexOf(inputValue) > -1) {
+    if (value.toLowerCase().indexOf(toUpperInput) > -1) {
       item[i].style.display = "";
       isNotFound = true;
     } else {
