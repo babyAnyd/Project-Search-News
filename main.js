@@ -14,7 +14,7 @@ export var newsList = [
   "Decoder: Armenia in a bind as Ukraine war resets global order",
   "What books should an aspiring journalist read?",
   "Marie Colvin shined a light on war-torn corners of the world",
-  "Vincent Baquiro bought twitter ",
+  "Vincent Baquiro bought twitter",
 ];
 
 export function search() {
